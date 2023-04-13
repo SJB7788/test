@@ -1,0 +1,46 @@
+body {
+    background-color: skyblue;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    position: absolute;
+    top: 0%;
+    background-color: white;
+    width: 100vw;
+    height: 45vh;
+}
+
+.skyblue {
+    position: absolute;
+    top: 55vh;
+    background-color: skyblue;
+    width: 100vw;
+    height: 45vh;
+}
+
+.snowscraper {
+    color: white;
+    font-family: sans-serif;
+    font-size: 5em;
+}
+
+.snowscraper-letter {
+    display: inline-block;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+.snowscraper:hover > .snowscraper-letter{
+    color: skyblue;
+    transform: translate(0, -100%);
+}
